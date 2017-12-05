@@ -8,7 +8,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/clear_session.php", 
+            url: "http://lukejaffe.github.io/catan/clear_session.php", 
             async: false
         }).done
         (
@@ -20,21 +20,21 @@ function Test()
         */
 
         /* Truncate the lobby table */
-        $.post("http://lucx.info/catan/clear_lobby.php");
+        $.post("http://lukejaffe.github.io/catan/clear_lobby.php");
 
         /* Drop Game1 */
-        $.post("http://lucx.info/catan/clear_game.php",
+        $.post("http://lukejaffe.github.io/catan/clear_game.php",
         {game: "Game1"});
 
         /* Drop Game1_messages */
-        $.post("http://lucx.info/catan/clear_game.php",
+        $.post("http://lukejaffe.github.io/catan/clear_game.php",
         {game: "Game1_messages"});
 
         /* Set the user */
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/set_user.php", 
+            url: "http://lukejaffe.github.io/catan/set_user.php", 
             data: {username: "a"},
             async: false
         }).done
@@ -49,7 +49,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/set_game.php", 
+            url: "http://lukejaffe.github.io/catan/set_game.php", 
             data: {game: "Game1"},
             async: false
         }).done
@@ -64,7 +64,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/create_game.php", 
+            url: "http://lukejaffe.github.io/catan/create_game.php", 
             data: {game: "Game1", players: 4},
             async: false
         }).done
@@ -79,7 +79,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/join_game.php", 
+            url: "http://lukejaffe.github.io/catan/join_game.php", 
             data: {game: "Game1"},
             async: false
         }).done
@@ -94,7 +94,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/select_color.php", 
+            url: "http://lukejaffe.github.io/catan/select_color.php", 
             data: {color: "red"},
             async: false
         }).done
@@ -130,7 +130,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/clear_session.php", 
+            url: "http://lukejaffe.github.io/catan/clear_session.php", 
             async: false
         }).done
         (
@@ -145,7 +145,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/set_user.php", 
+            url: "http://lukejaffe.github.io/catan/set_user.php", 
             data: {username: name},
             async: false
         }).done
@@ -160,7 +160,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/set_game.php", 
+            url: "http://lukejaffe.github.io/catan/set_game.php", 
             data: {game: "Game1"},
             async: false
         }).done
@@ -175,7 +175,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/join_game.php", 
+            url: "http://lukejaffe.github.io/catan/join_game.php", 
             data: {game: "Game1"},
             async: false
         }).done
@@ -190,7 +190,7 @@ function Test()
         $.ajax(
         {
             type: 'POST',
-            url: "http://lucx.info/catan/select_color.php", 
+            url: "http://lukejaffe.github.io/catan/select_color.php", 
             data: {color: color},
             async: false
         }).done

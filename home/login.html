@@ -33,7 +33,7 @@
 
 <script>
 
-$.post( "http://lucx.info/session", function(response)
+$.post( "http://lukejaffe.github.io/session", function(response)
 {
     $("h3").html("Welcome: "+response);
 });
@@ -53,12 +53,12 @@ $('#submit').click(function()
     var password = document.getElementById("password_field").value;
 
     //socket.emit('login_data', {'username':username_field, 'password':password_field});
-    $.post( "http://lucx.info/login", 
+    $.post( "http://lukejaffe.github.io/login", 
     {username: username, password: password},
     function(response)
     {
         if (response == "0")
-            window.location.href = "http://lucx.info/"; 
+            window.location.href = "http://lukejaffe.github.io/"; 
         else if (response == "1")
             $("h2").html("Invalid username password combination.");
         else

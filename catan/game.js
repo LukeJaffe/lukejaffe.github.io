@@ -162,21 +162,21 @@ Game.prototype.setup = function(seed)
 Game.prototype.ajax = function()
 {
     /* Get game name from session */
-    $.post("http://lucx.info/catan/get_user.php", 
+    $.post("http://lukejaffe.github.io/catan/get_user.php", 
     function(response)
     {
         $("#user_name").html("Username: "+response);
     });
 
     /* Get game name from session */
-    $.post("http://lucx.info/catan/get_game.php", 
+    $.post("http://lukejaffe.github.io/catan/get_game.php", 
     function(response)
     {
         $("#game_name").html("Game: "+response);
     });
 
     /* Get players in game and their colors */
-    $.post("http://lucx.info/catan/get_players.php", 
+    $.post("http://lukejaffe.github.io/catan/get_players.php", 
     function(response)
     {
         /* Get player table */
@@ -205,7 +205,7 @@ Game.prototype.ajax = function()
 
     /* Get this player's color and save to game object */
     var game = this;
-    $.post("http://lucx.info/catan/get_color.php", 
+    $.post("http://lukejaffe.github.io/catan/get_color.php", 
     function(response)
     {
         game.color = response;

@@ -76,7 +76,7 @@ var socket = io.connect();
 var username = "GUEST";
 
 /* Get username from session data */
-$.post( "http://lucx.info/session", function(response)
+$.post( "http://lukejaffe.github.io/session", function(response)
 {
     $("h3").html("Welcome: "+response);
     username = response;
@@ -161,7 +161,7 @@ function join_game(id)
 
 socket.on('join_game_success', function()
 {
-    window.location.href = "http://lucx.info/catan/setup.html";
+    window.location.href = "http://lukejaffe.github.io/catan/setup.html";
 });
 
 socket.on('join_game_failure', function(data)

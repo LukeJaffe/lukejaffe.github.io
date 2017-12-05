@@ -22,7 +22,7 @@ var RECEIVER =
 
 function send_message(tag, payload, receiver)
 {
-    $.post("http://lucx.info/catan/send_message.php",
+    $.post("http://lukejaffe.github.io/catan/send_message.php",
     {tag: tag, payload: payload, receiver: receiver},
     function(response)
     {

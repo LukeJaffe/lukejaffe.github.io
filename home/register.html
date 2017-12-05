@@ -42,7 +42,7 @@
 
 var socket = io.connect();
 
-$.post( "http://lucx.info/session", function(response)
+$.post( "http://lukejaffe.github.io/session", function(response)
 {
     $("h3").html("Welcome: "+response);
 });
@@ -62,7 +62,7 @@ $('#submit').click(function()
     var username = document.getElementById("username_field").value;
     var password = document.getElementById("password_field").value;
 
-    $.post( "http://lucx.info/register", 
+    $.post( "http://lukejaffe.github.io/register", 
     {firstname: firstname, lastname: lastname, email: email,
     username: username, password: password},
     function(response)

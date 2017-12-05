@@ -29,7 +29,7 @@ function Comparator(a,b)
 function add_score(score)
 {
     var name = "guest";
-    $.post( "http://lucx.info/snake", 
+    $.post( "http://lukejaffe.github.io/snake", 
     {action: "WRITE", score: score});
 }
 
@@ -38,7 +38,7 @@ var scoreboard = [];
 function top_ten()
 {
     console.log("top ten");
-    $.post( "http://lucx.info/snake", 
+    $.post( "http://lukejaffe.github.io/snake", 
     {action: "READ"}, 
     function(response)
     {

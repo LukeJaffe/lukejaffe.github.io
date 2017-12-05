@@ -51,7 +51,7 @@ function prep_css(base, file)
 
 
 /* Start connection to mongodb */
-mongoose.connect('mongodb://localhost/lucx_info');
+mongoose.connect('mongodb://localhost/lukejaffe.github.io');
 
 /* Define schemas */
 var UserSchema = mongoose.Schema(

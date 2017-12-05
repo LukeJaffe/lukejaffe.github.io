@@ -1,5 +1,5 @@
 <?php
-    header('Access-Control-Allow-Origin: http://lucx.info');
+    header('Access-Control-Allow-Origin: http://lukejaffe.github.io');
     header('Access-Control-Allow-Credentials: true');
     header('Access-Control-Allow-Methods: POST, OPTIONS');
 

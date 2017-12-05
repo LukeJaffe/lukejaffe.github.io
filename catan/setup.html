@@ -46,7 +46,7 @@ var socket = io.connect();
 var username = "GUEST";
 
 /* Get username from session data */
-$.post( "http://lucx.info/session", function(response)
+$.post( "http://lukejaffe.github.io/session", function(response)
 {
     $("h3").html("Welcome: "+response);
     username = response;
@@ -100,7 +100,7 @@ socket.on('user_data', function(data)
         $('#color_select').change( function()
         {
             var option = $(this).find('option:selected').val();
-            $.post("http://lucx.info/catan/select_color.php",
+            $.post("http://lukejaffe.github.io/catan/select_color.php",
             {color: option},
             function(response)
             {
@@ -123,12 +123,12 @@ socket.on('user_data', function(data)
 //Redirect to game page if game is started (every 1s)
 function goto_game()
 {
-    $.post("http://lucx.info/catan/check_started.php",
+    $.post("http://lukejaffe.github.io/catan/check_started.php",
     function(response)
     {
         if (response == 1)
         {
-            window.location.href = "http://lucx.info/catan/game.html";
+            window.location.href = "http://lukejaffe.github.io/catan/game.html";
             $("h2").html("started");
         }
         else if (response == 0) 
@@ -141,7 +141,7 @@ function goto_game()
 setInterval(goto_game, 1000);
 
 // Fetch entries from mysql 
-$.post("http://lucx.info/catan/get_players.php",
+$.post("http://lukejaffe.github.io/catan/get_players.php",
 function(response)
 {
     // Add column titles to table 
@@ -188,7 +188,7 @@ function(response)
             $('#color_select').change( function()
             {
                 var option = $(this).find('option:selected').val();
-                $.post("http://lucx.info/catan/select_color.php",
+                $.post("http://lukejaffe.github.io/catan/select_color.php",
                 {color: option},
                 function(response)
                 {
@@ -209,7 +209,7 @@ function(response)
 
 // Check if game is full 
 var full = false;
-$.post("http://lucx.info/catan/check_full.php",
+$.post("http://lukejaffe.github.io/catan/check_full.php",
 function(response)
 {
     if (response == 0)
@@ -221,7 +221,7 @@ function(response)
 });
 
 // Enable start button if host and full 
-$.post("http://lucx.info/catan/check_host.php",
+$.post("http://lukejaffe.github.io/catan/check_host.php",
 function(response)
 {
     if (response == 0 && full == true)
@@ -231,11 +231,11 @@ function(response)
 // Start button starts game 
 $("#start_button").click(function()
 {
-    $.post("http://lucx.info/catan/start_game.php",
+    $.post("http://lukejaffe.github.io/catan/start_game.php",
     function(response)
     {
     });
-    window.location.href = "http://lucx.info/catan/game.html";
+    window.location.href = "http://lukejaffe.github.io/catan/game.html";
 });
 */
 

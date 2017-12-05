@@ -22,8 +22,8 @@
 
 <!-- Top Bar -->
 <ul>
-  <li><a href="http://lucx.info/index.html">Home</a></li>
-  <li><a href="http://lucx.info/catan/index.html">Lobby</a></li>
+  <li><a href="http://lukejaffe.github.io/index.html">Home</a></li>
+  <li><a href="http://lukejaffe.github.io/catan/index.html">Lobby</a></li>
   <li><a class="active" href="#game">Game</a></li>
   <button id="test_a" style="margin: 12px 50px;">Test A</button>
   <button id="test_b" style="margin: 12px -40px;">Test B</button>
@@ -49,7 +49,7 @@ $(window).on("load", function()
     game.ajax();
 
     /* Wait to get the seed, then setup */
-    $.post("http://lucx.info/catan/get_seed.php",
+    $.post("http://lukejaffe.github.io/catan/get_seed.php",
     {game: "Game1"},
     function(response)
     {
@@ -129,7 +129,7 @@ function pass_phase()
     btn.disabled = true; 
 
     /* Get next person in turn order */
-    $.post("http://lucx.info/catan/get_next.php",
+    $.post("http://lukejaffe.github.io/catan/get_next.php",
     function(next_player)
     {
         console.log("Next:"+next_player);
@@ -166,7 +166,7 @@ function wait_phase()
 <div id="left_panel">
     <h2>Turn Phases</h2>
     <div id="dice_bg">
-        <script type='text/javascript' src='http://lucx.info/catan/dice/d6.js'></script>
+        <script type='text/javascript' src='http://lukejaffe.github.io/catan/dice/d6.js'></script>
         <script type='text/javascript'>
         D6.dice(2, d6_callback, "dice/");
         </script>
@@ -263,7 +263,7 @@ function wait_phase()
 $("#start_game").click( function()
 {
     /* Start game and get first player */
-    $.post("http://lucx.info/catan/start_game.php",
+    $.post("http://lukejaffe.github.io/catan/start_game.php",
     function(response)
     {
         var first_player = response;
@@ -284,7 +284,7 @@ $("#text_input").keypress(function(e)
         {
             $("#text_input").val("");
             var message = text; 
-            $.post("http://lucx.info/catan/send_message.php",
+            $.post("http://lukejaffe.github.io/catan/send_message.php",
             {tag: MESSAGE.CHAT, payload: message, receiver: "ALL"},
             function(response)
             {
@@ -298,7 +298,7 @@ $("#text_input").keypress(function(e)
 /* Check messages from MySQL at the specified interval */
 setInterval(function()
 {
-    $.post("http://lucx.info/catan/check_message.php",
+    $.post("http://lukejaffe.github.io/catan/check_message.php",
     function(response)
     {
         if (response !== "NO_MESSAGES")
@@ -322,7 +322,7 @@ function handle_message(message)
     {
         case MESSAGE.SET:
             /* Check what player I am */
-            $.post("http://lucx.info/catan/get_user.php",
+            $.post("http://lukejaffe.github.io/catan/get_user.php",
             function(response)
             {
                 /* If it is my turn */
@@ -342,7 +342,7 @@ function handle_message(message)
         case MESSAGE.PASS:
             console.log("receive set message");
             /* Get players in game and their colors */
-            $.post("http://lucx.info/catan/get_players.php", 
+            $.post("http://lukejaffe.github.io/catan/get_players.php", 
             function(response)
             {
                 /* Parse response */
@@ -362,7 +362,7 @@ function handle_message(message)
             });
 
             /* Check what player I am */
-            $.post("http://lucx.info/catan/get_user.php",
+            $.post("http://lukejaffe.github.io/catan/get_user.php",
             function(response)
             {
                 /* If it is my turn */
