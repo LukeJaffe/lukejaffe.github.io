@@ -116,17 +116,6 @@ h1
     text-shadow: -10px 0 #2F3738, 0 10px #2F3738, 10px 0 #2F3738, 0 -10px #2F3738;
 }
 
-h2
-{
-    position: fixed;
-    top: 300px;
-    left: 50px;
-    color: yellow;
-    text-align: center;
-    font-family: "Calibri";
-    font-size: large;
-}
-
 h3
 {
     padding: 14px 16px;
