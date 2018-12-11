@@ -1,32 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+-->
 <html>
+	<head>
+		<title>Luke Jaffe's Homepage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
 
-<head>
+			<!-- Header -->
+				<div id="header">
 
-<script src="/utils/jquery-1.11.3.min.js"></script>
-<link rel="stylesheet" type="text/css" href="pp_home.css">
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Luke Jaffe's <em>Homepage</em></a></h1>
 
-</head>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+							</ul>
+						</nav>
 
-<body>
+				</div>
 
-<ul class="horizontal-list">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="games.html">Games</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <h3></h3>
-</ul>
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2><em>A website to show off my personal and professional projects.</em></h2>
+					</header>
+				</section>
 
-<h1>Welcome!</h1>
+			<!-- Highlights -->
+                <section class="wrapper style1">
+                    <!-- Posts -->
+                    <div class="container">
+                        <div class="col">
+                            <section class="col-6 col-12-narrower">
+                                <div class="box post">
+                                    <a href="#" class="image left"><img src="images/personal/iceland.jpg" alt="" /></a>
+                                    <div class="inner">
+                                        <h3>About Me</h3>
+                                        <p>I work as a software engineer and data scientist at LLNL, using python and deep learning technologies to research visual recognition problems.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
 
-<script>
+			<!-- Footer -->
+				<div id="footer">
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/luke.jaffe.1" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/lukejaffe" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/luke-jaffe/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
 
-$.post( "http://lukejaffe.github.io/session", function(response)
-{
-    $("h3").html("Welcome: "+response);
-});
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li>
+							</ul>
+						</div>
 
-</script>
+				</div>
 
-</body>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

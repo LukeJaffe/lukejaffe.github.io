@@ -1,36 +1,178 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+    My Projects
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="pp_home.css">
-<title>Page Title</title>
-</head>
-<body>
+	<head>
+		<title>My Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
 
-<ul class="horizontal-list">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="games.html">Games</a></li>
-  <li><a href="about.html">About</a></li>
-  <h3></h3>
-</ul>
+			<!-- Header -->
+				<div id="header">
 
-<h2 style="margin-left: 0.5cm">About Me</h2>
-<div class="column" style="width:500px;">
-    <p style="margin-left: 0.5cm;">I work as a software engineer and data scientist at LLNL, using python and deep learning technologies to research visual recognition problems.</p>
-</div>
-<img src="iceland.jpg" alt="Iceland" style="height:256px; margin-left: 0.5cm;">
-<h2 style="margin-left: 0.5cm">About the Page</h2>
-<div class="column" style="width:500px;">
-    <p style="margin-left: 0.5cm;">I use this page to play with JavaScript, HTML, and WebGL. The page is ported from an environment with server-side control, so some previously interactive portions are still being modified.</p>
-</div>
-<!-- Proposal documents for FS and ER? -->
-<!-- SepSense paper: link coming soon -->
-<!-- Triplet stuff: https://casis.llnl.gov/content/pages/casis-2017/docs/LLNL_Sakla_DL_Instance_Level_Vehicle_Correspondence_CASIS_2017.pdf -->
-<!-- SepSense presentation: https://data-science.llnl.gov/sites/data_science/files/luke_jaffe_remote_sensor_design_for_automated_visual_recognition_0.pdf -->
-<!-- Stanford CS231N class project: google link -->
-<!-- Stanford CV class project: upload something -->
-<!-- LBANN: https://github.com/LLNL/lbann -->
-<!-- predictomato -->
-<!-- look for other projects I have done to upload... -->
-<!-- sBox? -->
-</body>
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Luke Jaffe's <em>Homepage</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current"><a href="projects.html">Projects</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+                                    <!-- Posts -->
+                                        <section class="wrapper style1">
+                                            <h2>Work Projects</h2>
+                                            <p>Here is a selection of projects I lead, work on, or contribute to in my postition at LLNL.</p>
+                                            <div class="container">
+                                                <div class="col">
+                                                    <section class="col-6 col-12-narrower">
+                                                    <!--SepSense: https://data-science.llnl.gov/sites/data_science/files/luke_jaffe_remote_sensor_design_for_automated_visual_recognition_0.pdf-->
+                                                        <div class="box post">
+                                                            <a href="https://data-science.llnl.gov/sites/data_science/files/luke_jaffe_remote_sensor_design_for_automated_visual_recognition_0.pdf" class="image left"><img src="images/projects/sepsense.png" style="border:#000000 2px solid;" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Remote Sensor Design for Automated Visual Recognition</h3>
+                                                                <p>I am PI for this project at LLNL. Presentation from LLNL Data Science Institute (DSI) Workshop, August 2018. Link to paper will be posted shortly on arxiv.org.</p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-6 col-12-narrower">
+                                                    <!--Triplets: https://casis.llnl.gov/content/pages/casis-2017/docs/LLNL_Sakla_DL_Instance_Level_Vehicle_Correspondence_CASIS_2017.pdf-->
+                                                        <div class="box post">
+                                                            <a href="https://casis.llnl.gov/content/pages/casis-2017/docs/LLNL_Sakla_DL_Instance_Level_Vehicle_Correspondence_CASIS_2017.pdf" class="image left"><img src="images/projects/triplets.png" style="border:#000000 2px solid;"  alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Deep Fine-grained Recognition from Surveillance Imagery</h3>
+                                                                <p>I worked on this project with PI Wesam Sakla. Presentation from LLNL CASIS Workshop, July 2017</p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-6 col-12-narrower">
+                                                    <!--LBANN: http://ornlcda.github.io/MLHPC2015/presentations/3-Brian.pdf-->
+                                                        <div class="box post">
+                                                            <a href="https://github.com/LLNL/lbann" class="image left"><img src="images/projects/lbann.png" style="" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Livermore Big Artificial Neural Network Toolkit (LBANN)</h3>
+                                                                <p>I am a minor contributor to this project. I am currently working on implementing the Single Shot Multibox Detector model in LBANN.</p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="wrapper style1">
+                                            <h2>Class Projects</h2>
+                                            <!-- Posts -->
+                                            <div class="container">
+                                                <div class="col">
+                                                    <section class="col-6 col-12-narrower">
+                                                        <div class="box post">
+                                                            <a href="#" class="image left"><img src="images/projects/cs231a.png" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Hand Action Recognition in G-D Video Data</h3>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-6 col-12-narrower">
+                                                        <div class="box post">
+                                                            <a href="http://cs231n.stanford.edu/reports/2017/pdfs/19.pdf" class="image left"><img src="images/projects/cs231n.png" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Super-Resolution to Improve Classification Accuracy of Low-Resolution Images</h3>
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-6 col-12-narrower">
+                                                        <div class="box post">
+                                                            <a href="https://github.com/LukeJaffe/xv6_tetris/blob/master/report.pdf" class="image left"><img src="images/projects/xv6_tetris.png" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Tetris in xv6</h3>
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!-- Other possibilities: sBox, ZedBoard Audio Equalizer -->
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="wrapper style1">
+                                            <h2>Personal Projects</h2>
+                                            <!-- Posts -->
+                                            <div class="container">
+                                                <div class="col">
+                                                    <section class="col-6 col-12-narrower">
+                                                        <div class="box post">
+                                                            <a href="https://github.com/LukeJaffe/movie_prediction" class="image left"><img src="images/projects/rt.jpeg" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Predictomato</h3>
+                                                                <p>Predicting RottenTomatoes score using only video trailers with convolutional neural networks.</p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section class="col-6 col-12-narrower">
+                                                        <div class="box post">
+                                                            <a href="https://github.com/LukeJaffe/goldberg" class="image left"><img src="images/projects/goldberg.png" alt="" /></a>
+                                                            <div class="inner">
+                                                                <h3>Goldberg Polyhedra</h3>
+                                                                <p>Some code for rendering Goldberg polyhedra.</p>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </section>
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/luke.jaffe.1" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/lukejaffe" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/luke-jaffe/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
